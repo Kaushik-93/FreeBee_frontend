@@ -2,7 +2,7 @@ import work from '../images/work.webp'
 import schedule from '../images/schedule.jpg'
 import donatework from '../images/donate-work.jpg'
 import aboutus from '../images/aboutus.jpeg'
-import '../style/page3.css'
+import '../style/home.css'
 
 const Page3 = () => {
     return (
@@ -12,10 +12,9 @@ const Page3 = () => {
         <h1 class="logo">FREEBEE</h1>
         <div class="navlin">
          <ul>
-          <li ><a href="#">HOME</a></li>
-          <li class="act2"><a href="#">VOLUNTEERS</a></li>
-          <li class="act3"><a href="#">ABOUT US</a></li>
-          <li class="ctn" ><a href="#">CONTACT US</a></li>
+          <li id='HOME'><a href="#HOME">HOME</a></li>
+          <li class="act3" id='ABOUTUS'><a href="#ABOUTUS">ABOUT US</a></li>
+          <li class="ctn" id='CONTACTUS'><a href="#CONTACTUS">CONTACT US</a></li>
           <li class="log" ><a href="login.html">LOGIN</a></li> 
           
          </ul>  
