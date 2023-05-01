@@ -1,7 +1,7 @@
 
   .orphform{
    
-   /* background-image: url('../images/orphhh.jpg'); */
+   background-image: url('../images/orphhh.jpg');
    
    
    background-size: 100%;
@@ -14,7 +14,7 @@
     background: #fff;
     margin: 23px 90px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
-    padding: 50px;
+    padding: 30px;
     border-radius: 30px;
     margin-left: 50%;
   }
@@ -235,5 +235,14 @@
   background: #ffd658 ;
  }
  .orph{
-    padding-top: 29px;
+    padding-top: 1px;
+  }
+  .radiobtn{
+    font-family: 'Inder';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #757575;
+   padding-left: 5px;
+   padding-bottom: 19px;
   }
