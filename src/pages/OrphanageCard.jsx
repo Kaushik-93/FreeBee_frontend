@@ -14,21 +14,22 @@ function OrphanageCard({ mobile, name, email }) {
   const notify = (message) => toast.success(message);
 
   const handleDonate=()=>{
-    
+    var donordata = JSON.parse(donorInfo)
+    // console.log(donordata.name)
       var donor_data = {
-        name:donorInfo.name,
-        address: donorInfo.address,
-        city: donorInfo.city,
-        state: donorInfo.state,
-        pincode: donorInfo.pincode,
-        mobile_no: donorInfo.mobile_no,
-        alt_mobile_no: donorInfo.alt_mobile_no,
-        email: donorInfo.email,
-        items: donorInfo.items,
-        vehicle_type: donorInfo.vechiles,
+        name: donordata.name,
+        address: donordata.address,
+        city: donordata.city,
+        state: donordata.state,
+        pincode: donordata.pincode,
+        mobile_no: donordata.mobile_no,
+        alt_mobile_no: donordata.alt_mobile_no,
+        email: donordata.email,
+        items: donordata.items,
+        vehicle_type: donordata.vehicle_type,
         orphanage_email:email
       };
-    console.log(donorInfo)
+    // console.log(donorInfo)
     axios
       .post(EMAIL_SERVICES, donor_data)
       .then(function (response) {
